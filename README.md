@@ -4,6 +4,11 @@ This repository presents a **minimal, first‐principles** introduction to systo
 
 ---
 
+## Updates
+07/01/25: Highly recommend readers to refer to the [TPU Deep Dive blog post](https://henryhmko.github.io/posts/tpu/tpu.html) for an in-depth introduction to TPUs
+
+---
+
 ## What Is a Systolic Array?
 
 A systolic (from the medical term for pulsing) array is a grid of simple Processing Elements (PEs) that rhythmically compute and pass data to their neighbors. Each PE holds two registers: `a` (weight) and `b` (activation), as well as an accumulator (`sum`):
@@ -109,7 +114,7 @@ _See the full implementation in [`systolic_array.py`](./systolic_array.py)._
 
   - A visual walkthrough of how systolic arrays perform matrix multiplication, with a focus on the weight-stationary dataflow used in deep learning accelerators.
 
-- **In-Datacenter Performance Analysis of a Tensor Processing Unit**, Jouppi et al., ISCA 2017 [arXiv](https://arxiv.org/abs/1704.04760)
+- **(TPUv1) In-Datacenter Performance Analysis of a Tensor Processing Unit**, Jouppi et al., ISCA 2017 [arXiv](https://arxiv.org/abs/1704.04760)
   
   The seminal Google TPU paper -- industrial-scale systolic array in practice.
 
